@@ -5,7 +5,9 @@ from os import urandom
 #Exercise 2
 plaintext = b'Hello darkness my old friend'
 key_base64 = b'WXvqxbAEEM08snXbYgu8bg=='
+# key_random = urandom(16)
 nonce_base64 = b'ZmRqZW1ma3Jtc2thbXNuZA=='
+# nonce_random = urandom(16)
 
 key = base64.b64decode(key_base64)
 nonce = base64.b64decode(nonce_base64)
